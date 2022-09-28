@@ -1,0 +1,25 @@
+@url = http://localhost:2800
+
+### GET 
+GET {{url}}/
+
+### GET PROFILE
+GET {{url}}/profile/aa
+
+### CREATE
+POST {{url}}/create
+Content-Type: application/json
+
+{
+    "name":"asier",
+    "age":29,
+    "job":"ever",
+    "bio":"for"
+}
+
+### UPDATE
+PUT {{url}}/update/aa
+
+### DELETE
+DELETE {{url}}/delete/aa
+

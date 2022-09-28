@@ -1,6 +1,8 @@
-import { config } from "dotenv";
-config();
+import dotenv from "dotenv";
+dotenv.config();
 
-export const PORT = process.env.PORT || 3000;
-export const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/mernts";
+export const config = {
+  PORT: process.env.PORT || 2800,
+  HOST: process.env.HOST || "localhost",
+  DATABASENAME: process.env.DATABASENAME || "mern",
+};
