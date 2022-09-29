@@ -4,22 +4,26 @@
 GET {{url}}/
 
 ### GET PROFILE
-GET {{url}}/profile/aa
-
+GET {{url}}/profile/633550f8e91ed4ca398397b0
 ### CREATE
 POST {{url}}/create
 Content-Type: application/json
 
 {
-    "name":"asier",
+    "name":"unai",
     "age":29,
     "job":"ever",
     "bio":"for"
 }
 
 ### UPDATE
-PUT {{url}}/update/aa
+PUT {{url}}/update/633490461b2ac67275caaec4
+Content-Type: application/json
+
+{
+    "age": 30
+}
 
 ### DELETE
-DELETE {{url}}/delete/aa
+DELETE {{url}}/delete/633550f8e91ed4ca398397b0
 
