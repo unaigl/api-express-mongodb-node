@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { createProfile, updateProfile } from "../controller/profile.controller";
 import { shcemaValidator } from "../middlewares/shcemaValidator.middleware";
-import { profileSchema, updateProfileSchema } from "../schema/profile.schema";
+import { ProfileSchema, UpdateProfileSchema } from "../schema/profile.schema";
 
 const router = Router();
 
-router.post("/create", shcemaValidator(profileSchema), createProfile);
-router.put("/update/:id", shcemaValidator(updateProfileSchema), updateProfile);
+router.post("/create", shcemaValidator(ProfileSchema), createProfile);
+router.put("/update/:id", shcemaValidator(UpdateProfileSchema), updateProfile);
 
 export default router;
