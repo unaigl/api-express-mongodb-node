@@ -24,7 +24,7 @@ export const updateProfile = (req: Request, res: Response) => {
     /* DATA already CHECKED using a middleware*/
 
     /* RETURN HTML OR... */
-    res.json("getting home");
+    res.json("updating");
   } catch (error) {
     /* ZOD user input types errors */
     if (error instanceof ZodError) {
